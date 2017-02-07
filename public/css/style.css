@@ -1,0 +1,8 @@
+.jumbotron {
+	margin-top: -22px;
+}
+
+.jumbotron,
+h1 {
+	padding-left: 10%;
+}
