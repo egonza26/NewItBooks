@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@include('partials.meta-static')
+
 @section('content')
 <div class="container">
     <div class="row">

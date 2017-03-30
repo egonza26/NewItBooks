@@ -8,11 +8,12 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('meta-title')</title>
+    <meta name="description" content="@yield('meta-des')">
+    <meta name="author" content="@yield('meta-author')">
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
 
     <!-- Scripts -->
     <script>
@@ -45,7 +46,8 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        {{-- <li><a href="{{ route('blog') }}">Blogs</a></li> --}}
+                        <li><a href="{{ route('blog') }}">Blogs</a></li>
+                        <li><a href="{{ route('admin') }}">Admin</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -84,6 +86,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="/js/app.js"></script>
+    {{-- <script src="/js/app.js"></script> --}}
 </body>
 </html>
