@@ -8,7 +8,6 @@
 </p>
 
 ## About the app
-<hr/>
 <p>Blog App created using Laravel. In the app the users can publish content related to technology, which is approved by the Admin sys</p>
 
 
